@@ -1,0 +1,77 @@
+nav{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.blog_btn{
+    background-color: #B4F461;
+    padding: 12px 32px;
+    border-radius: 12px;
+    color: black;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+.donate-btn{
+    background-color: #B4F461;
+    display: block;
+    width: 100%;
+}
+.tab-area{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 120px;
+    z-index: 9;
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+.tab:is(input[type=radio]){
+    --tw-content: attr(aria-label);
+    content: var(--tw-content);
+    border: 1px solid black;
+    margin: 0 8px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.tab:is(.tab-active,[aria-selected=true]):not(.tab-disabled):not([disabled]), .tab:is(input:checked) {
+    border-color: transparent;
+    --tw-border-opacity: 1;
+    --tw-text-opacity: 1;
+    border: 1px solid #B4F461;
+    background-color: #B4F461;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.history-block h2{
+border: 1px solid #dfdfdf;
+padding: 30px;
+margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:576px) {
+    .card-side {
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .card figure img{
+        width: 100%;
+    }
+}
